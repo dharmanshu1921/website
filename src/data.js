@@ -13,6 +13,9 @@ import { GiHouse, GiChemicalDrop, GiReceiveMoney } from "react-icons/gi";
 import { AiTwotoneLike } from "react-icons/ai";
 import { FaUserTie, FaIndustry } from "react-icons/fa";
 
+
+
+
 //export hero block data
 export const heroData = [
   {
@@ -127,5 +130,21 @@ export const benefits = [
     icon: <FaIndustry size={30} className="text-orange-500"></FaIndustry>,
     names: "Industry Connect",
     text: "Meetings of innovators/startups with leaders from industries are organised regularly by ACIC-BMU. Connect with ecosystem players like Investors, successful entrepreneurs, service providers is provided to the startups.",
+  },
+];
+
+export const contact = [
+  {
+    phone: "8501235021",
+    email: "acic@bmu.edu.in",
+    address:
+      "ACIC-BMU Foundation ,BML Munjal University ,Kapriwas ,Haryana ,India -122413. ",
+    addressLink: "https://goo.gl/maps/DVHeCfiqki9j9qhj7",
+    linkedin: "https://www.linkedin.com/in/acic-bmu-foundation-719561220/",
+    facebook: "https://www.facebook.com/",
+    instagram: "https://www.instagram.com/acicbmu/",
+    youtube: "https://www.youtube.com/",
+    twitter: "https://twitter.com/ACIC_BMU",
+    mail: "",
   },
 ];
