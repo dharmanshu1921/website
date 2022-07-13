@@ -1,40 +1,45 @@
 import React from "react";
+import { steeringCommittee } from "../data";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import { team } from "../data";
 
-const Team = () => {
+const Steering = () => {
   return (
     <>
       <div className="px-3 py-16  bg-white mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="mx-auto mb-4 lg:max-w-2xl sm:text-center">
-          <p className="inline-block px-3 py-px mb-2 lg:text-4xl text-4xl font-bold font-poppins tracking-wider">
+        <div className="max-w-lg mx-auto text-center">
+          <h2 className="text-3xl font-bold sm:text-4xl">
             <span className="underline decoration-orange-600 decoration-4 underline-offset-2">
-              ACIC-BM
+              Steeri
             </span>
-            U Foundation Team
+            ng Committee
+          </h2>
+          <p className="mt-4 text-gray-500">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequuntur aliquam doloribus nesciunt eos fugiat. Vitae aperiam
+            fugit consequuntur saepe laborum.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-          {team.map((member) => {
+        <div className="grid grid-cols-1 gap-8 mt-4 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+          {steeringCommittee.map((member) => {
             return (
               <>
-                <div className="flex flex-col items-center p-2 transition-colors duration-200 transform cursor-pointer group hover:bg-orange-400 rounded-xl">
+                <div className="flex flex-col items-center p-2 transition-colors duration-200 transform  group hover:bg-orange-400 rounded-xl">
                   <img
                     className="object-cover w-48 h-48 rounded-full ring-4 ring-orange-600"
                     src={member.src}
                     alt={member.alt}
                   />
 
-                  <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize group-hover:text-white">
+                  <h1 className="mt-4 text-md font-semibold  group-hover:text-white">
                     {member.name}
                   </h1>
 
-                  <p className="mt-2 text-gray-700 capitalize group-hover:text-white">
+                  <p className="mt-2 text-sm text-gray-700  group-hover:text-white">
                     {member.position}
                   </p>
-                  <p className=" text-gray-700 capitalize group-hover:text-white">
+                  <p className="text-sm text-gray-700  group-hover:text-white">
                     {member.organisation}
                   </p>
 
@@ -66,4 +71,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default Steering;

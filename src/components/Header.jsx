@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { logos } from "../data";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -8,16 +9,25 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
+
   return (
-    <div className="sticky top-0 z-40 w-full bg-white flex justify-between items-center h-22 text-black scroll-m-2  ">
+    <div className="sticky top-0 z-40 w-full bg-white flex justify-between items-center h-22 text-black scroll-m-2 shadow-md">
       <div className="w-3/12 ">
-        <img src="https://www.bmu.edu.in/acic-propel/ACIC_Bmu%20prope_logo.svg" alt="logo"></img>
+        <img src={logos[0].src} alt={logos[0].alt}></img>
       </div>
+
       <ul className="hidden md:flex">
         <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
           <li className="p-4">ABOUT US</li>
         </Link>
-        <Link to="incubation" spy={true} smooth={true} offset={50} duration={500}>
+        <li></li>
+        <Link
+          to="incubation"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           <li className="p-4">INCUBATION</li>
         </Link>
         <Link to="gallery" spy={true} smooth={true} offset={50} duration={500}>
@@ -29,14 +39,14 @@ const Navbar = () => {
         <Link to="gallery" spy={true} smooth={true} offset={50} duration={500}>
           <li className="p-4">GALLERY</li>
         </Link>
-        <Link to="gallery" spy={true} smooth={true} offset={50} duration={500}>
+        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
           <li className="p-4">CONTACT</li>
         </Link>
-
-        <div className="w-4 pr-4 width: 100rem">
-          <img src="https://www.bmu.edu.in/acic-propel/images/other-logo.jpeg" />
-        </div>
       </ul>
+      <div className="w-52 pr-4">
+        <img src={logos[0].srcNiti} alt={logos[0].alt} />
+      </div>
+
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>

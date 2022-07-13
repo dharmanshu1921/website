@@ -1,162 +1,73 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+// import { events } from "../data";
+
+import { AiOutlineCalendar } from "react-icons/ai";
+import { FiArrowRight } from "react-icons/fi";
 
 const Events = () => {
   return (
     <>
-      <div className="max-w-screen-xl p-5 mx-auto dark:bg-gray-800 dark:text-gray-100">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 md:gap-0 lg:grid-rows-2">
-          <div
-            className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 md:col-span-2 lg:row-span-2 lg:h-full group dark:bg-gray-500"
-            // style={{backgroundImage: url(https://source.unsplash.com/random/245x320)}}
-          >
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-            <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline dark:text-gray-100 dark:bg-violet-400"
-              >
-                Art
-              </a>
-              <div className="flex flex-col justify-start text-center dark:text-gray-100">
-                <span className="text-3xl font-semibold leading-none tracking-wide">
-                  31
-                </span>
-                <span className="leading-none uppercase">Jul</span>
-              </div>
+      <div className="max-w-lg mx-auto text-center py-10">
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          <span className="underline decoration-orange-600 decoration-4 underline-offset-2">
+            Eve
+          </span>
+          nts
+        </h2>
+        <p className="mt-4 mb-6 text-gray-500">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
+          aliquam doloribus nesciunt eos fugiat. Vitae aperiam fugit
+          consequuntur saepe laborum.
+        </p>
+      </div>
+      <section className="p-4 border shadow-2xl lg:p-4 mx-16 text-gray-800">
+        <div className="container mx-auto space-y-12">
+          <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
+            <img
+              src="https://source.unsplash.com/640x480/?1"
+              alt=""
+              className="h-80 bg-gray-500 aspect-video"
+            />
+            <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
+              <h3 className="text-3xl font-bold">
+                We're not reinventing the wheel
+              </h3>
+              <span className="flex my-2 text-xs">
+                <AiOutlineCalendar size={16} /> 31/12/2020
+              </span>
+              <p className="mb-2 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                cumque soluta maiores fugiat perspiciatis provident velit
+                ducimus quo earum, ab ut adipisci exercitationem obcaecati
+                voluptatem, tempora expedita voluptas porro officia?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque temporibus ducimus, voluptatem cumque saepe, suscipit fuga accusantium commodi alias distinctio unde voluptate esse ex. Quaerat architecto quia voluptatum rerum enim?
+              </p>
+              <span className="flex mb-2 text-sm">
+                <h4>Speaker:</h4>
+                <p> Davinder Singh</p>
+              </span>
+              <span className="flex mb-2 text-sm">
+                <a href="/">Link</a>
+              </span>
             </div>
-            <h2 className="z-10 p-5">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="font-medium text-md group-hover:underline lg:text-2xl lg:font-semibold dark:text-gray-100"
-              >
-                Fuga ea ullam earum assumenda, beatae labore eligendi.
-              </a>
-            </h2>
-          </div>
-          <div
-            className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500"
-            // style='background-image: url("https://source.unsplash.com/random/240x320");'
-          >
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-            <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline dark:text-gray-100 dark:bg-violet-400"
-              >
-                Politics
-              </a>
-              <div className="flex flex-col justify-start text-center dark:text-gray-100">
-                <span className="text-3xl font-semibold leading-none tracking-wide">
-                  04
-                </span>
-                <span className="leading-none uppercase">Aug</span>
-              </div>
-            </div>
-            <h2 className="z-10 p-5">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="font-medium text-md group-hover:underline dark:text-gray-100"
-              >
-                {" "}
-                Autem sunt tempora mollitia magnam non voluptates
-              </a>
-            </h2>
-          </div>
-          <div
-            className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500"
-            // style='background-image: url("https://source.unsplash.com/random/241x320");'
-          >
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-            <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline dark:text-gray-100 dark:bg-violet-400"
-              >
-                Health
-              </a>
-              <div className="flex flex-col justify-start text-center dark:text-gray-100">
-                <span className="text-3xl font-semibold leading-none tracking-wide">
-                  01
-                </span>
-                <span className="leading-none uppercase">Aug</span>
-              </div>
-            </div>
-            <h2 className="z-10 p-5">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="font-medium text-md group-hover:underline dark:text-gray-100"
-              >
-                Inventore reiciendis aliquam excepturi
-              </a>
-            </h2>
-          </div>
-          <div
-            className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500"
-            // style='background-image: url("https://source.unsplash.com/random/242x320");'
-          >
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-            <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline dark:text-gray-100 dark:bg-violet-400"
-              >
-                Science
-              </a>
-              <div className="flex flex-col justify-start text-center dark:text-gray-100">
-                <span className="text-3xl font-semibold leading-none tracking-wide">
-                  28
-                </span>
-                <span className="leading-none uppercase">Jul</span>
-              </div>
-            </div>
-            <h2 className="z-10 p-5">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="font-medium text-md group-hover:underline dark:text-gray-100"
-              >
-                Officiis mollitia dignissimos commodi optio vero animi
-              </a>
-            </h2>
-          </div>
-          <div
-            className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500"
-            // style='background-image: url("https://source.unsplash.com/random/243x320");'
-          >
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-            <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline dark:text-gray-100 dark:bg-violet-400"
-              >
-                Sports
-              </a>
-              <div className="flex flex-col justify-start text-center dark:text-gray-100">
-                <span className="text-3xl font-semibold leading-none tracking-wide">
-                  19
-                </span>
-                <span className="leading-none uppercase">Jul</span>
-              </div>
-            </div>
-            <h2 className="z-10 p-5">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="font-medium text-md group-hover:underline dark:text-gray-100"
-              >
-                Doloribus sit illo necessitatibus architecto exercitationem enim
-              </a>
-            </h2>
           </div>
         </div>
+      </section>
+
+      <div className="pb-4 pt-10 px-16 grid place-items-end">
+        <Link to="/aboutus">
+          <a class="relative inline-flex items-center px-8 py-3 overflow-hidden text-white bg-orange-500 rounded-full group" href="/">
+            <span class="absolute right-0 transition-transform translate-x-full group-hover:-translate-x-4">
+              <FiArrowRight />
+            </span>
+
+            <span class="text-sm font-medium transition-all group-hover:mr-4">
+              View All
+            </span>
+          </a>
+        </Link>
       </div>
     </>
   );
