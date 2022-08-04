@@ -12,6 +12,7 @@ import AkshayMunjal from "./assets/akshay_munjal.jpg";
 import ManojArora from "./assets/manoj_arora.jpg";
 import AbhaySharma from "./assets/abhay_sharma.jpg";
 import DavinderSingh from "./assets/davinder_sir_img.png";
+import Srinath from "./assets/srinath_shaw.jpg"
 import DeepakPandit from "./assets/deepak_pandit.jpg";
 
 //import steering assets
@@ -141,7 +142,7 @@ export const team = [
     organisation: "ACIC BMU Foundation",
     linkedin: "https://www.linkedin.com/",
     twitter: "https://twitter.com/",
-    src: DeepakPandit,
+    src: Srinath,
     alt: "Mr. Srinath",
   },
   {

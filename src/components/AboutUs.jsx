@@ -18,7 +18,7 @@ const AboutUs = () => {
             t ACIC-BMU Foundation
           </h2>
         </div>
-        <div className="p-2 max-w-7xl mx-auto text-left">
+        <div className="p-2 max-w-4xl mx-auto text-left">
           <p className="mt-4">{about[0].heroAbout}</p>
         </div>
         <div className="grid place-items-center">

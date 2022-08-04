@@ -1,7 +1,7 @@
 import React from "react";
 import { steeringCommittee } from "../data";
 import { FaLinkedin } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+
 
 const Steering = () => {
   return (
@@ -51,14 +51,6 @@ const Steering = () => {
                       className="mx-2 text-gray-800  group-hover:text-white"
                     >
                       <FaLinkedin></FaLinkedin>
-                    </a>
-                    <a
-                      href={member.twitter}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mx-2 text-gray-800  group-hover:text-white"
-                    >
-                      <FaTwitter></FaTwitter>
                     </a>
                   </div>
                 </div>

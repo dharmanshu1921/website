@@ -47,14 +47,6 @@ const Team = () => {
                     >
                       <FaLinkedin></FaLinkedin>
                     </a>
-                    <a
-                      href={member.twitter}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mx-2 text-gray-800  group-hover:text-white"
-                    >
-                      <FaTwitter></FaTwitter>
-                    </a>
                   </div>
                 </div>
               </>

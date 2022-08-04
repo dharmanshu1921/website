@@ -6,7 +6,7 @@ const ApplyNow = () => {
       <div className="p-6 py-12 bg-orange-500 text-white">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row items-center justify-between">
-            <h2 className="text-center text-6xl tracking-tighter font-bold">
+            <h2 className="text-center text-3xl tracking-tighter font-bold">
               For Startup Incubation
             </h2>
             <div className="space-x-2 text-center py-2 lg:py-0">
